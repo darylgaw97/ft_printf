@@ -36,6 +36,7 @@ void	print_p(t_tab *tab, va_list *args, int *count)
 		*count += write(1, " ", 1);
 }
 
+/*converts variable of "unsigned long" type into "char *" in hex form*/
 static char	*ul_to_hex(unsigned long p)
 {
 	char	reversed[17];

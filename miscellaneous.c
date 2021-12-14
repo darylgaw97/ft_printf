@@ -12,6 +12,7 @@
 
 #include "ft_printf.h"
 
+/*mallocs and return a t_tab after setting all parameters to zero*/
 t_tab	*initialise_tab(void)
 {
 	t_tab	*tab;
@@ -33,6 +34,7 @@ t_tab	*initialise_tab(void)
 	return (tab);
 }
 
+/*calculates number of digits of an integer*/
 int	numlen(long n)
 {
 	int	len;
@@ -48,6 +50,7 @@ int	numlen(long n)
 	return (len);
 }
 
+/*outputs a '0' or ' ' depending on the state of the flags*/
 int	put_indent(t_tab *tab)
 {
 	tab->width--;

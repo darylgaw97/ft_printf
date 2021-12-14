@@ -46,6 +46,9 @@ int	set_specifier(t_tab *tab, char c)
 	return (1);
 }
 
+/*If the 0 and - flags both appear, the 0 flag is ignored. 
+If a precision is given with a numeric conversion
+(d, i, o, u, x, and X), the 0 flag is ignored.*/
 void	handle_override(t_tab *tab)
 {
 	if (tab->minus || tab->precision)

@@ -40,6 +40,9 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
+/* this functions breaks down the various flags along with width and precision 
+and assigns it to the struct t_tab, which will be used later on in the 
+printing section.*/
 static int	parse(const char *format, t_tab *tab, va_list *args, int *count)
 {
 	int	offset;
